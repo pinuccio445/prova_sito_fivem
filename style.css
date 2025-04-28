@@ -538,3 +538,95 @@ footer {
         gap: 1rem;
     }
 }
+
+/* Sezione Regolamento */
+.rules-section {
+    padding: 5rem 10%;
+    background-color: #0f0f15;
+    border-top: 1px solid #2a2a3a;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-header h2 {
+    color: #4a9eff;
+    font-size: 2.5rem;
+}
+
+.rules-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.rule-article {
+    background-color: #252535;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.rule-article h3 {
+    color: #4a9eff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.rule-list {
+    padding-left: 1.5rem;
+    line-height: 1.8;
+}
+
+.rule-list li {
+    margin-bottom: 0.5rem;
+}
+
+.rules-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn-docs {
+    background-color: #4285F4;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-docs:hover {
+    background-color: #3367D6;
+}
+
+.acceptance-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #252535;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+}
+
+#rules-accepted {
+    width: 18px;
+    height: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .rules-footer {
+        flex-direction: column;
+    }
+    
+    .btn-docs {
+        width: 100%;
+        justify-content: center;
+    }
+}
