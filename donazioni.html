@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donazioni - Nome Server FiveM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Server">
+            <h1>Nome Server</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Server <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html#features">Features</a>
+                        <a href="index.html#rules">Regole</a>
+                        <a href="index.html#staff">Staff</a>
+                        <a href="index.html#vehicles">Veicoli</a>
+                    </div>
+                </li>
+                <li><a href="index.html#join">Come Unirsi</a></li>
+                <li><a href="donazioni.html" class="active">Donazioni</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="donation-hero">
+        <div class="donation-hero-content">
+            <h2>Supporta il Server</h2>
+            <p>Le tue donazioni ci aiutano a mantenere e migliorare il server</p>
+        </div>
+    </section>
+
+    <section class="donation-info">
+        <div class="donation-container">
+            <div class="donation-text">
+                <h2>Perché Donare?</h2>
+                <p>Il server è completamente gratuito per tutti i giocatori, ma i costi di mantenimento sono elevati. Le donazioni ci permettono di:</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Pagare l'hosting del server</li>
+                    <li><i class="fas fa-check"></i> Sviluppare nuove features</li>
+                    <li><i class="fas fa-check"></i> Aggiungere veicoli e mappe</li>
+                    <li><i class="fas fa-check"></i> Migliorare l'esperienza di gioco</li>
+                </ul>
+                <p>In cambio, offriamo ricompense esclusive ai nostri sostenitori!</p>
+            </div>
+            <div class="donation-image">
+                <img src="donation-bg.jpg" alt="Supporta il server">
+            </div>
+        </div>
+    </section>
+
+    <section class="donation-packages">
+        <h2>Pacchetti Donazione</h2>
+        <div class="packages-grid">
+            <div class="package-card bronze">
+                <div class="package-header">
+                    <h3>Bronze</h3>
+                    <div class="package-price">€5</div>
+                </div>
+                <div class="package-features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> $50,000 in-game</li>
+                        <li><i class="fas fa-check"></i> Veicolo base</li>
+                        <li><i class="fas fa-check"></i> Tag donatore in-game</li>
+                        <li><i class="fas fa-check"></i> Tag donatore su Discord</li>
+                    </ul>
+                </div>
+                <button class="donate-btn" data-amount="5">Dona Ora</button>
+            </div>
+            
+            <div class="package-card silver">
+                <div class="package-header">
+                    <h3>Silver</h3>
+                    <div class="package-price">€15</div>
+                </div>
+                <div class="package-features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> $200,000 in-game</li>
+                        <li><i class="fas fa-check"></i> Veicolo di medio livello</li>
+                        <li><i class="fas fa-check"></i> Casa base</li>
+                        <li><i class="fas fa-check"></i> Tag donatore in-game</li>
+                        <li><i class="fas fa-check"></i> Tag donatore su Discord</li>
+                    </ul>
+                </div>
+                <button class="donate-btn" data-amount="15">Dona Ora</button>
+            </div>
+            
+            <div class="package-card gold">
+                <div class="package-header">
+                    <h3>Gold</h3>
+                    <div class="package-price">€30</div>
+                </div>
+                <div class="package-features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> $500,000 in-game</li>
+                        <li><i class="fas fa-check"></i> Veicolo di alto livello</li>
+                        <li><i class="fas fa-check"></i> Casa di lusso</li>
+                        <li><i class="fas fa-check"></i> Lavoro esclusivo</li>
+                        <li><i class="fas fa-check"></i> Tag donatore VIP</li>
+                        <li><i class="fas fa-check"></i> Priorità nel supporto</li>
+                    </ul>
+                </div>
+                <button class="donate-btn" data-amount="30">Dona Ora</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="custom-donation">
+        <h2>Donazione Personalizzata</h2>
+        <div class="custom-donation-form">
+            <div class="form-group">
+                <label for="amount">Importo (€):</label>
+                <input type="number" id="amount" min="1" step="1" value="10">
+            </div>
+            <div class="form-group">
+                <label for="username">Nome Giocatore:</label>
+                <input type="text" id="username" placeholder="Il tuo nome in-game">
+            </div>
+            <div class="form-group">
+                <label for="message">Messaggio (opzionale):</label>
+                <textarea id="message" placeholder="Lascia un messaggio..."></textarea>
+            </div>
+            <button id="custom-donate-btn" class="donate-btn">Dona Ora</button>
+        </div>
+    </section>
+
+    <section class="donation-faq">
+        <h2>Domande Frequenti</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">Come ricevo le ricompense?<i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Le ricompense vengono consegnate entro 24 ore dalla donazione. Assicurati di aver inserito correttamente il tuo nome giocatore nel modulo di donazione.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">Le donazioni sono rimborsabili?<i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>No, tutte le donazioni sono considerate contributi volontari e non sono rimborsabili.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">Posso donare più di una volta?<i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Certo! Puoi donare quante volte vuoi e accumulare i benefici dei pacchetti.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">Come posso verificare il mio stato di donatore?<i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Puoi contattare uno staffer su Discord o aprire un ticket nel nostro server di supporto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Info Server</h3>
+                <p>IP: serverip:port</p>
+                <p>Versione: 1.0.0</p>
+                <p>Status: Online</p>
+            </div>
+            <div class="footer-section">
+                <h3>Link Utili</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#rules">Regole</a></li>
+                    <li><a href="index.html#vehicles">Veicoli</a></li>
+                    <li><a href="donazioni.html">Donazioni</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Supporto</h3>
+                <p>Per problemi con le donazioni:</p>
+                <a href="mailto:support@yourserver.com" class="support-email">support@yourserver.com</a>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Nome Server FiveM. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=TUO_CLIENT_ID&currency=EUR"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaCityRP - GTA V Roleplay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo Server">
+            <h1>NovaCityRP</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Server <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#features">Features</a>
+                        <a href="#rules">Regole</a>
+                        <a href="#staff">Staff</a>
+                        <a href="#vehicles">Veicoli</a>
+                    </div>
+                </li>
+                <li><a href="#join">Come Unirsi</a></li>
+                <li><a href="donazioni.html">Donazioni</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Benvenuti su NovaCityRP</h2>
+            <p>Il miglior server FiveM Roleplay italiano</p>
+            <a href="fivem://connect/serverip:port" class="btn">Connettiti Ora</a>
+            <div class="server-stats">
+                <span><i class="fas fa-users"></i> Giocatori online: <span id="playerCount">0</span>/128</span>
+                <span><i class="fas fa-heart"></i> Status: <span id="serverStatus">Online</span></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Le Nostre Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-id-card"></i>
+                <h3>Roleplay Autentico</h3>
+                <p>Sistema avanzato di roleplay con economia realistica e interazioni complesse.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-car"></i>
+                <h3>Veicoli Personalizzati</h3>
+                <p>Oltre 200 veicoli aggiuntivi con fisiche realistiche e personalizzazioni.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-home"></i>
+                <h3>Case e Proprietà</h3>
+                <p>Sistema di acquisto e personalizzazione di case e attività commerciali.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-briefcase"></i>
+                <h3>Lavori Unici</h3>
+                <p>Oltre 30 lavori diversi con meccaniche approfondite per ogni professione.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="rules" class="rules">
+        <h2>Regole del Server</h2>
+        <div class="rules-container">
+            <div class="rule-category">
+                <h3><i class="fas fa-gavel"></i> Regole Generali</h3>
+                <ul>
+                    <li>Rispetto verso tutti i giocatori</li>
+                    <li>Divieto di metagaming e powergaming</li>
+                    <li>Nessun cheat o mod illegittima</li>
+                </ul>
+            </div>
+            <div class="rule-category">
+                <h3><i class="fas fa-user-shield"></i> Roleplay</h3>
+                <ul>
+                    <li>Mantenere sempre il RP (FearRP, ValueRP)</li>
+                    <li>Nessun RDM/VDM</li>
+                    <li>Interazioni vocali obbligatorie</li>
+                </ul>
+            </div>
+            <div class="rule-category">
+                <h3><i class="fas fa-exclamation-triangle"></i> Sanzioni</h3>
+                <ul>
+                    <li>Avvertimento per infrazioni minori</li>
+                    <li>Kick per ripetute violazioni</li>
+                    <li>Ban per gravi infrazioni</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="staff" class="staff">
+        <h2>Il Nostro Staff</h2>
+        <div class="staff-grid">
+            <div class="staff-card">
+                <img src="founder.jpg" alt="Founder">
+                <h3>Nome Founder</h3>
+                <p>Founder</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="staff-card">
+                <img src="admin.jpg" alt="Admin">
+                <h3>Nome Admin</h3>
+                <p>Admin</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vehicles" class="vehicles">
+        <h2>Parco Veicoli</h2>
+        <div class="vehicle-filters">
+            <button class="filter-btn active" data-filter="all">Tutti</button>
+            <button class="filter-btn" data-filter="sport">Sportive</button>
+            <button class="filter-btn" data-filter="suv">SUV</button>
+            <button class="filter-btn" data-filter="motorcycle">Moto</button>
+            <button class="filter-btn" data-filter="classic">Classiche</button>
+        </div>
+        <div class="vehicles-grid">
+            <div class="vehicle-card" data-category="sport">
+                <div class="vehicle-image">
+                    <img src="vehicles/adder.jpg" alt="Adder">
+                    <div class="vehicle-overlay">
+                        <h3>Adder</h3>
+                        <p>Velocità: 10/10</p>
+                        <p>Accelerazione: 9/10</p>
+                        <p>Prezzo: $1,200,000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vehicle-card" data-category="suv">
+                <div class="vehicle-image">
+                    <img src="vehicles/baller.jpg" alt="Baller">
+                    <div class="vehicle-overlay">
+                        <h3>Baller</h3>
+                        <p>Velocità: 7/10</p>
+                        <p>Robustezza: 8/10</p>
+                        <p>Prezzo: $85,000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="join" class="join">
+        <h2>Come Unirsi</h2>
+        <div class="join-steps">
+            <div class="step">
+                <span>1</span>
+                <h3>Scarica FiveM</h3>
+                <p>Scarica e installa FiveM dal sito ufficiale</p>
+            </div>
+            <div class="step">
+                <span>2</span>
+                <h3>Connettiti al Server</h3>
+                <p>Clicca il pulsante qui sotto o inserisci manualmente l'IP</p>
+                <a href="fivem://connect/serverip:port" class="btn">Connettiti</a>
+            </div>
+            <div class="step">
+                <span>3</span>
+                <h3>Unisciti al Discord</h3>
+                <p>Entra nella nostra community Discord per restare aggiornato</p>
+                <a href="https://discord.gg/tuolink" class="btn-discord"><i class="fab fa-discord"></i> Discord</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Info Server</h3>
+                <p>IP: serverip:port</p>
+                <p>Versione: 1.0.0</p>
+                <p>Status: Online</p>
+            </div>
+            <div class="footer-section">
+                <h3>Link Utili</h3>
+                <ul>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Wiki</a></li>
+                    <li><a href="donazioni.html">Donazioni</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Social</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 NovaCityRP FiveM. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
